@@ -11,6 +11,7 @@ An Android app built entirely in Java using Android Studio that enables users to
 
 # Project Screenshots
 ![Login Page](app/src/main/res/drawable/screenshot1.png)
+![Register Page](app/src/main/res/drawable/screenshot3.png)
 ![Certificate Upload Page](app/src/main/res/drawable/screenshot2.png)
 
 
