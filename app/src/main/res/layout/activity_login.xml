@@ -77,21 +77,22 @@
                 android:backgroundTint="#004f71"
                 app:cornerRadius = "20dp"/>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Not yet registered? Signup now"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:id="@+id/signupText"
+                android:textColor="#004f71"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginBottom="10dp"/>
+
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="5dp"
-        android:text="Not yet registered? Signup now"
-        android:textSize="16sp"
-        android:textAlignment="center"
-        android:id="@+id/signupText"
-        android:textColor="#FFFFFF"
-        android:layout_marginBottom="20dp"/>
-
-
 
 </LinearLayout>
