@@ -23,11 +23,12 @@
         <EditText
             android:id="@+id/certIdField"
             android:hint="Enter Certificate ID"
-            android:textColor="#FFF"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:background="@android:drawable/editbox_background"
+            android:background="@drawable/custom_edittest"
             android:layout_marginBottom="15dp" />
 
         <Button
