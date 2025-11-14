@@ -38,7 +38,7 @@ public class MainActivity2 extends AppCompatActivity {
                     startActivity(intent);
                     finish();
                 } else {
-                    Toast.makeText(MainActivity2.this, "Login Failed!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity2.this, "Incorrect username or password!", Toast.LENGTH_SHORT).show();
                 }
             }
         });
