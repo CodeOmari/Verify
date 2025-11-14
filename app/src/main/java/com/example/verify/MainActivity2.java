@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.verify.R;
@@ -16,6 +17,7 @@ public class MainActivity2 extends AppCompatActivity {
     EditText username;
     EditText password;
     Button loginButton;
+    TextView signupText;
 
 
     @Override
@@ -26,6 +28,7 @@ public class MainActivity2 extends AppCompatActivity {
         username = findViewById(R.id.username);
         password = findViewById(R.id.password);
         loginButton = findViewById(R.id.loginButton);
+        signupText = findViewById(R.id.signupText);
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,6 +43,15 @@ public class MainActivity2 extends AppCompatActivity {
                 } else {
                     Toast.makeText(MainActivity2.this, "Incorrect username or password!", Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+
+        signupText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity2.this, RegisterActivity.class);
+                startActivity(intent);
+                finish();
             }
         });
     }
