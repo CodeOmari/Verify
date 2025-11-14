@@ -25,7 +25,6 @@ public class RegisterActivity extends AppCompatActivity {
         regPassword = findViewById(R.id.regPassword);
         regConfirmPassword = findViewById(R.id.regConfirmPassword);
         registerButton = findViewById(R.id.registerButton);
-        loginText = findViewById(R.id.loginText);
 
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,22 +40,13 @@ public class RegisterActivity extends AppCompatActivity {
                     // You can save user data to SharedPreferences or database here
 
                     // Go back to login page after successful registration
-                    Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
+                    Intent intent = new Intent(RegisterActivity.this, MainActivity2.class);
                     startActivity(intent);
                     finish();
                 }
             }
         });
 
-        loginText.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // Navigate back to login page
-                Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
     }
 
     private boolean validateInput(String username, String email, String password, String confirmPassword) {
