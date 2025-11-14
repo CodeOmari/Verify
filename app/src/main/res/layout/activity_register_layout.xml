@@ -6,8 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#004f71"
     android:gravity="center"
-    android:background="@drawable/background1"
     tools:context=".RegisterActivity">
 
     <androidx.cardview.widget.CardView
@@ -23,20 +23,30 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:orientation="vertical"
+            android:background="#FFF"
             android:padding="24dp">
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Verify"
+                android:textColor="#004f71"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:paddingBottom="15dp" />
 
             <EditText
                 android:id="@+id/regUsername"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="15dp"
                 android:background="@drawable/custom_edittest"
                 android:drawablePadding="8dp"
                 android:hint="Username"
+                android:textColorHint="@color/black"
                 android:padding="8dp"
-                android:textColor="@color/black"
-                android:textColorHighlight="@color/cardview_dark_background" />
+                android:textColor="@color/black" />
 
             <EditText
                 android:id="@+id/regEmail"
@@ -46,10 +56,10 @@
                 android:background="@drawable/custom_edittest"
                 android:drawablePadding="8dp"
                 android:hint="Email"
+                android:textColorHint="@color/black"
                 android:inputType="textEmailAddress"
                 android:padding="8dp"
-                android:textColor="@color/black"
-                android:textColorHighlight="@color/cardview_dark_background" />
+                android:textColor="@color/black" />
 
             <EditText
                 android:id="@+id/regPassword"
@@ -59,10 +69,10 @@
                 android:background="@drawable/custom_edittest"
                 android:drawablePadding="8dp"
                 android:hint="Password"
+                android:textColorHint="@color/black"
                 android:inputType="textPassword"
                 android:padding="8dp"
-                android:textColor="@color/black"
-                android:textColorHighlight="@color/cardview_dark_background" />
+                android:textColor="@color/black" />
 
             <EditText
                 android:id="@+id/regConfirmPassword"
@@ -72,33 +82,23 @@
                 android:background="@drawable/custom_edittest"
                 android:drawablePadding="8dp"
                 android:hint="Confirm Password"
+                android:textColorHint="@color/black"
                 android:inputType="textPassword"
                 android:padding="8dp"
-                android:textColor="@color/black"
-                android:textColorHighlight="@color/cardview_dark_background" />
+                android:textColor="@color/black" />
 
             <Button
                 android:id="@+id/registerButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="20dp"
                 android:backgroundTint="#004f71"
                 android:text="Register"
+                android:textColor="#FFF"
                 android:textSize="18sp"
                 app:cornerRadius="20dp" />
 
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:text="Already have an account? Signin now"
-        android:textSize="14sp"
-        android:textAlignment="center"
-        android:id="@+id/loginText"
-        android:textColor="#ffffff"
-        android:layout_marginBottom="20dp"/>
 </LinearLayout>
