@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@drawable/background1"
+    android:background="#004f71"
     tools:context=".MainActivity">
 
     <androidx.cardview.widget.CardView
@@ -24,9 +24,18 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_gravity="center_horizontal"
+            android:background="#FFF"
             android:padding="24dp">
 
-
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Verify"
+                android:textColor="#004f71"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:paddingBottom="15dp" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -36,10 +45,11 @@
                 android:drawableLeft="@drawable/baseline_person_24"
                 android:drawablePadding="8dp"
                 android:hint="Username"
+                android:textColorHint="@color/black"
                 android:padding="8dp"
                 android:textColor="@color/black"
                 android:textColorHighlight="@color/cardview_dark_background"
-                android:layout_marginTop="40dp"/>
+                android:layout_marginTop="15dp"/>
 
             <EditText
                 android:id="@+id/password"
@@ -47,9 +57,10 @@
                 android:layout_height="50dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/custom_edittest"
-                android:drawableStart="@drawable/outline_admin_panel_settings_24"
+                android:drawableStart="@drawable/baseline_admin_panel_settings_24"
                 android:drawablePadding="8dp"
                 android:hint="Password"
+                android:textColorHint="@color/black"
                 android:inputType="textPassword"
                 android:padding="8dp"
                 android:textColor="@color/black"
@@ -62,7 +73,7 @@
                 android:text="Login"
                 android:textColor="#FFF"
                 android:textSize="18sp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="20dp"
                 android:backgroundTint="#004f71"
                 app:cornerRadius = "20dp"/>
 
